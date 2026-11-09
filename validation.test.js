@@ -1,8 +1,7 @@
 
 const test = require("node:test");
 const assert = require("node:assert");
-
-const { isValidEmail, validateContact } = require("../validation");
+const { isValidEmail, validateContact } = require("./validation");
 
 test("Valid email should return true", () => {
     assert.strictEqual(isValidEmail("test@gmail.com"), true);
