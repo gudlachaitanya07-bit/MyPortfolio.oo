@@ -1,0 +1,182 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #101010;
+    color: white;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #181818;
+    position: sticky;
+    top: 0;
+}
+
+header h2 span, .hero span {
+    color: #ff3030;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+nav a:hover {
+    color: #ff3030;
+}
+
+section {
+    padding: 90px 10%;
+    min-height: 300px;
+}
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin: 15px 0;
+}
+
+.hero h2 {
+    color: #aaa;
+    margin-bottom: 15px;
+}
+
+.tag {
+    color: #ff3030;
+}
+
+.btn, button {
+    background: #ff3030;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section h2 {
+    color: #ff3030;
+    margin-bottom: 25px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills span {
+    background: #252525;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.project {
+    background: #202020;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.project h3 {
+    color: #ff3030;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+}
+
+input, textarea {
+    padding: 15px;
+    background: #222;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+footer {
+    background: #181818;
+    text-align: center;
+    padding: 25px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
+
+.project {
+    transition: 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    border-color: #ff3030;
+    box-shadow: 0 5px 20px #ff303033;
+}
+
+.project a {
+    display: inline-block;
+    color: #ff3030;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+button:hover, .btn:hover {
+    background: #cc2020;
+}
